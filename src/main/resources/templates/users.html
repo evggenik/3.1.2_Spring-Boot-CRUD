@@ -18,8 +18,8 @@
         <th:block th:each="user : ${users}">
             <tr>
                 <td th:text="${user.id}">...</td>
-                <td th:text="${user.name}">...</td>
-                <td th:text="${user.mail}">...</td>
+                <td th:text="${user.user_name}">...</td>
+                <td th:text="${user.email}">...</td>
                 <td><a th:href="@{/edit/{id}(id=${user.getId()})}">Изменить</a></td>
                 <td><a th:href="@{/delete/{id}(id=${user.getId()})}">Удалить</a></td>
             </tr>

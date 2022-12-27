@@ -9,9 +9,9 @@
 <h2>Добавить нового пользователя</h2>
 <form th:method="POST" th:action="@{/add}" th:object= "${user}">
     <label for="name">Имя: </label>
-    <input type="text" th:field="*{name}" id="name">
+    <input type="text" th:field="*{user_name}" id="name">
     <label for="mail">Почта: </label>
-    <input type="text" th:field="*{mail}" id="mail">
+    <input type="text" th:field="*{email}" id="mail">
     <br>
     <br>
     <input type="submit" value="Создать">
